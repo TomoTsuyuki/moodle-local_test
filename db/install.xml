@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/test/db" VERSION="2021111700" COMMENT="XMLDB file for Moodle local/test"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="localtest" COMMENT="Defines localtest">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="fieldchar" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" COMMENT="Binary field"/>
+                <FIELD NAME="fieldbinary" TYPE="binary" NOTNULL="true" SEQUENCE="false" COMMENT="Binary field"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
